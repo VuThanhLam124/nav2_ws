@@ -58,8 +58,6 @@ source install/setup.bash
 export TURTLEBOT3_MODEL=waffle
 export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/opt/ros/humble/share/turtlebot3_gazebo/models
 source /opt/ros/humble/setup.bash
-cd ~/nav2_ws
-colcon build --symlink-install
 source install/setup.bash
 export LIBGL_ALWAYS_SOFTWARE=1
 ros2 launch nav2_bringup tb3_simulation_launch.py headless:=True \
