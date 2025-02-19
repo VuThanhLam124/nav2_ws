@@ -56,5 +56,12 @@ source install/setup.bash
 # 3. Run with your params file(can modify by your self)
 ```bash
 export TURTLEBOT3_MODEL=waffle
-ros2 launch nav2_bringup navigation_launch.py params_file:=~/nav2_ws/sicnav_controller/params.yaml
+export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/opt/ros/humble/share/turtlebot3_gazebo/models
+source /opt/ros/humble/setup.bash
+cd ~/nav2_ws
+colcon build --symlink-install
+source install/setup.bash
+export LIBGL_ALWAYS_SOFTWARE=1
+ros2 launch nav2_bringup tb3_simulation_launch.py headless:=True \
+  params_file:=/home/ubuntu/nav2_pyif_ws/src/nav2_pyif/sicnav_python_example/params.yaml
 ```
