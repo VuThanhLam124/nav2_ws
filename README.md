@@ -15,7 +15,7 @@ Using Nav2_PYIF, you can implement your controller in Python. This controller wi
 The project is configured to work with the TurtleBot3 robot in a Gazebo simulation. This setup allows you to test and tune your navigation algorithms without deploying directly on hardware.
 
 ## Project Objectives:
-
+https://github.com/VuThanhLam124/nav2_ws.git
 Develop a safe navigation system for TurtleBot3 in a simulated environment.
 Leverage the building blocks provided by SICNav to implement custom control strategies.
 Provide a flexible framework where reinforcement learning-based navigation and safe control policies can be integrated.
@@ -28,11 +28,11 @@ Provide a flexible framework where reinforcement learning-based navigation and s
 
 # 1. Clone the Required Repositories and setup project step by step
 ```bash
-git clone https://github.com/your_username/nav2_ws.git
+git clone https://github.com/VuThanhLam124/nav2_ws.git
 cd nav2_ws/src
-git clone https://github.com/your_username/nav2_pyif.git
-git clone https://github.com/your_username/Python-RVO2.git
-git clone https://github.com/your_username/safe-interactive-crowdnav.git
+git clone https://github.com/DanelLepp/nav2_pyif.git
+git clone https://github.com/sybrenstuvel/Python-RVO2.git
+git clone https://github.com/sepsamavi/safe-interactive-crowdnav.git
 ```
 Here, replace requirements.txt file and setup.py to src/safe-interactive-crowdnav, then:
 ```bash
