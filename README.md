@@ -63,5 +63,5 @@ colcon build --symlink-install
 source install/setup.bash
 export LIBGL_ALWAYS_SOFTWARE=1
 ros2 launch nav2_bringup tb3_simulation_launch.py headless:=True \
-  params_file:=~/nav2_pyif_ws/src/nav2_pyif/sicnav_python_example/params2.yaml
+  params_file:=~/nav2_pyif_ws/src/nav2_pyif/sicnav_python_example/params.yaml
 ```
