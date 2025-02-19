@@ -36,16 +36,16 @@ git clone https://github.com/sepsamavi/safe-interactive-crowdnav.git
 ```
 Here, replace requirements.txt file and setup.py to src/safe-interactive-crowdnav, then:
 ```bash
-cd nav2_ws/src/safe-interactive-crowdnav/
+cd your-path/nav2_ws/src/safe-interactive-crowdnav/
 pip install -e .
 pip install -r requirements.txt
 ```
 ```bash
-cd nav2_ws/src/Python-RVO2
+cd your-path/nav2_ws/src/Python-RVO2
 pip install -e .
 ```
 ```bash
-cd nav2_ws/
+cd your-path/nav2_ws/
 ros2 pkg create --build-type ament_python sicnav_controller
 ```
 # 2. Build the project
@@ -61,5 +61,5 @@ source /opt/ros/humble/setup.bash
 source install/setup.bash
 export LIBGL_ALWAYS_SOFTWARE=1
 ros2 launch nav2_bringup tb3_simulation_launch.py headless:=True \
-  params_file:=nav2_ws/sicnav_controller/params2.yaml
+  params_file:=your-path/nav2_ws/sicnav_controller/params2.yaml
 ```
