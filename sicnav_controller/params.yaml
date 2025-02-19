@@ -1,0 +1,9 @@
+controller_server:
+  ros__parameters:
+    controller_plugins: ["RLNavController"]
+    RLNavController:
+      plugin: "nav2_pyif::PyController"
+      python_module: "sicnav_controller.rlnav_controller"
+      python_class: "RLNavController"
+      model_path: "~/nav2_ws/src/safe-interactive-crowdnav/RL_nav/trained_model.pth"
+      max_speed: 0.5

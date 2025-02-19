@@ -1,0 +1,9 @@
+controller_server:
+  ros__parameters:
+    controller_plugins: ["CarefulController"]
+    CarefulController:
+      plugin: "nav2_pyif::PyController"
+      python_module: "sicnav_controller.careful_controller"
+      python_class: "CarefulController"
+      max_speed: 0.4
+      safety_margin: 0.3
