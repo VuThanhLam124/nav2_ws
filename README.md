@@ -1,4 +1,5 @@
 # Project Description
+## Make sure that your enviroment is python 3.10, have ROS2 and your Ubuntu version is 22.04
 ## Overview:
 This project integrates SICNav (Safe Interactive Crowd Navigation) with ROS2 NAV2 using Nav2_PYIF to enable safe and reinforcement learning-based navigation for TurtleBot3 in a Gazebo simulation. SICNav provides various modules—such as those for crowd simulation and safety functions—allowing you to build custom controllers. However, the current setup does not yet integrate specific modules like DWA, CAMPc, or RL_nav. You are expected to develop your own controller in ~/sicnav_controller/sicnav_controller that leverages SICNav’s building blocks to process sensor data (from LiDAR and/or camera) and generate safe velocity commands.
 
