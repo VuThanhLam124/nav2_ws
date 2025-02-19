@@ -26,10 +26,31 @@ Provide a flexible framework where reinforcement learning-based navigation and s
 - You are expected to extend and integrate the provided building blocks to meet your navigation requirements.
 
 
-# 1. Clone the Required Repositories
+# 1. Clone the Required Repositories and setup project step by step
 ```bash
 git clone https://github.com/your_username/nav2_ws.git
-cd nav2_ws
+cd nav2_ws/src
+git clone https://github.com/your_username/nav2_pyif.git
+git clone https://github.com/your_username/Python-RVO2.git
+git clone https://github.com/your_username/safe-interactive-crowdnav.git
+```
+Here, replace requirements.txt file and setup.py to src/safe-interactive-crowdnav, then:
+```bash
+cd ~/nav2_ws/src/safe-interactive-crowdnav/
+pip install -e .
+pip install -r requirements.txt
+```
+```bash
+cd ~/nav2_ws/src/nav2_pyif/
+pip install -e src/python_controller/
+```
+```bash
+cd Python-RVO2
+pip install -e .
+```
+```bash
+cd ~/nav2_ws/
+ros2 pkg create --build-type ament_python sicnav_controller
 ```
 # 2. Build the project
 ```bash
