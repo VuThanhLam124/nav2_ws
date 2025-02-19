@@ -41,11 +41,7 @@ pip install -e .
 pip install -r requirements.txt
 ```
 ```bash
-cd ~/nav2_ws/src/nav2_pyif/
-pip install -e src/python_controller/
-```
-```bash
-cd Python-RVO2
+cd ~/nav2_ws/src/Python-RVO2
 pip install -e .
 ```
 ```bash
