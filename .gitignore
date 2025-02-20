@@ -1,9 +1,7 @@
-# Loại bỏ thư mục build, install, log (được tạo tự động khi build)
 build/
 install/
 log/
 
-# Loại bỏ các file cache, tạm thời
 *.pyc
 __pycache__/
 *.egg-info/
