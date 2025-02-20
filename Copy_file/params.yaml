@@ -18,4 +18,8 @@ controller_server:
       python_class: "Controller"
       max_speed: 0.4
       safety_margin: 0.3
+      python_delegates:
+        set_plan: "<set_plan_override>"
+        set_speed_limit: "<set_speed_limit_override>"
+        compute_velocity_commands: "<compute_velocity_commands_override>"
 
