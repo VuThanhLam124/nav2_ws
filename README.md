@@ -29,7 +29,8 @@ Provide a flexible framework where reinforcement learning-based navigation and s
 # 1. Clone the Required Repositories and setup project step by step
 ```bash
 git clone https://github.com/VuThanhLam124/nav2_ws.git
-cd nav2_ws/src
+cd nav2_ws/
+mkdir src
 ```
 ```bash
 git clone https://github.com/DanelLepp/nav2_pyif.git
