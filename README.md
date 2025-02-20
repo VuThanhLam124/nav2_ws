@@ -49,12 +49,12 @@ cd your-path/nav2_ws/src/Python-RVO2
 pip install -e .
 ```
 ```bash
-cd your-path/nav2_ws/sicnav_controller
-pip install -e .
-```
-```bash
 cd your-path/nav2_ws/
 ros2 pkg create --build-type ament_python sicnav_controller
+```
+```bash
+cd your-path/nav2_ws/sicnav_controller
+pip install -e .
 ```
 # 2. Build the project
 ```bash
