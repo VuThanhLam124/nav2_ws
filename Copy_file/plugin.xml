@@ -1,0 +1,7 @@
+<library path="sicnav_controller">
+  <class name="sicnav_controller::Controller"
+         type="sicnav_controller.Controller"
+         base_class_type="nav2_core::Controller">
+    <description>Custom SICNAV Controller</description>
+  </class>
+</library>
