@@ -30,6 +30,8 @@ Provide a flexible framework where reinforcement learning-based navigation and s
 ```bash
 git clone https://github.com/VuThanhLam124/nav2_ws.git
 cd nav2_ws/src
+```
+```bash
 git clone https://github.com/DanelLepp/nav2_pyif.git
 git clone https://github.com/sybrenstuvel/Python-RVO2.git
 git clone https://github.com/sepsamavi/safe-interactive-crowdnav.git
