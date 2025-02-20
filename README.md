@@ -34,11 +34,16 @@ mkdir src
 cd src/
 ```
 ```bash
+cd ~/nav2_ws/
+ros2 pkg create --build-type ament_python sicnav_controller
+```
+```bash
+cd ~/nav2_ws/src
 git clone https://github.com/DanelLepp/nav2_pyif.git
 git clone https://github.com/sybrenstuvel/Python-RVO2.git
 git clone https://github.com/sepsamavi/safe-interactive-crowdnav.git
 ```
-Here, replace requirements.txt file and setup.py to src/safe-interactive-crowdnav, then:
+Here, replace requirements.txt file, plugin.xml and package.xml  and setup.py to src/safe-interactive-crowdnav, then:
 ```bash
 cd your-path/nav2_ws/src/safe-interactive-crowdnav/
 pip install -e .
@@ -49,13 +54,13 @@ cd your-path/nav2_ws/src/Python-RVO2
 pip install -e .
 ```
 ```bash
-cd your-path/nav2_ws/
-ros2 pkg create --build-type ament_python sicnav_controller
-```
-```bash
 cd your-path/nav2_ws/sicnav_controller
 pip install -e .
 ```
+```bash
+
+```
+Then, put all param file in Copy_file folder to sicnav_controller folder, then copy controller python file to sicnav_controller/sicnav_controller folder which have _init__.py.
 # 2. Build the project
 ```bash
 colcon build
