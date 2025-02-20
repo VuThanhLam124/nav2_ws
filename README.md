@@ -49,7 +49,7 @@ cd your-path/nav2_ws/src/Python-RVO2
 pip install -e .
 ```
 ```bash
-cd your-path/nav2_ws/src/sicnav_controller
+cd your-path/nav2_ws/sicnav_controller
 pip install -e .
 ```
 ```bash
